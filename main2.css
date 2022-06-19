@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Panchang-Variable';
+    src: url('assets/Fonts/WEB/fonts/Panchang-Variable.woff2') format('woff2'),
+         url('assets/Fonts/WEB/fonts/Panchang-Variable.woff') format('woff'),
+         url('assets/Fonts/WEB/fonts/Panchang-Variable.ttf') format('truetype');
+         font-weight: 200 800;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Extralight';
+    src: url('assets/Fonts/WEB/fonts/Panchang-Extralight.woff2') format('woff2'),
+         url('assets/Fonts/WEB/fonts/Panchang-Extralight.woff') format('woff'),
+         url('assets/Fonts/WEB/fonts/Panchang-Extralight.ttf') format('truetype');
+         font-weight: 200;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Light';
+    src: url('assets/Fonts/WEB/fonts/Panchang-Extralight.woff2') format('woff2'),
+         url('assets/Fonts/WEB/fonts/Panchang-Extralight.woff') format('woff'),
+         url('assets/Fonts/WEB/fonts/Panchang-Extralight.tff') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Regular';
+    src: url('assets/Fonts/WEB/fonts/Panchang-Regular.woff2') format('woff2'),
+         url('assets/Fonts/WEB/fonts/Panchang-Regular.woff') format('woff'),
+         url('assets/Fonts/WEB/fonts/Panchang-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Medium';
+    src: url('assets/Fonts/WEB/fonts/Panchang-Medium.woff2') format('woff2'),
+         url('assets/Fonts/WEB/fonts/Panchang-Medium.woff') format('woff'),
+         url('assets/Fonts/WEB/fonts/Panchang-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Semibold';
+    src: url('assets/Fonts/WEB/fonts/Panchang-Semibold.woff2') format('woff2'),
+         url('assets/Fonts/WEB/fonts/Panchang-Semibold.woff') format('woff'),
+         url('assets/Fonts/WEB/fonts/Panchang-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Bold';
+    src: url('assets/Fonts/WEB/fonts/Panchang-Bold.woff2') format('woff2'),
+         url('assets/Fonts/WEB/fonts/Panchang-Bold.woff') format('woff'),
+         url('assets/Fonts/WEB/fonts/Panchang-Bold.tff') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Panchang-Extrabold';
+    src: url('assets/Fonts/WEB/fonts/Panchang-Extrabold.woff2') format('woff2'),
+         url('assets/Fonts/WEB/fonts/Panchang-Extrabold.woff') format('woff'),
+         url('assets/Fonts/WEB/fonts/Panchang-Extrabold.tff') format('truetype');
+         font-weight: 800;
+         font-display: swap;
+         font-style: normal;
+  }
+
+body {
+    padding: 0%;
+    margin: 0%;
+    /* overflow: hidden; */
+    font-family: 'Panchang', sans-serif;
+}
+
+h1 {
+    font-family: 'Panchang-Variable', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    font-size: 5em;
+    margin-top: 150px;
+    margin-left: 42%;
+    line-height: 90%
+}
+
+h2 {
+    font-family: 'Panchang-Variable', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    color: rgb(0,0,255);
+    padding: 0px;
+    padding-left: 2%;
+    margin-left: 4%;
+}
+
+#index {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    border-right: 2px solid rgb(0,0,255);
+    padding: auto;
+}
+
+#index img {
+    padding: 1vh;
+    width: 80%;
+    height: 80%;
+}
+
+
+#intro {
+    position: absolute;
+    border-top: 2px solid rgb(0,0,255);
+    border-bottom: 2px solid rgb(0,0,255);
+    width: 100%;
+}
+
+#index{
+    margin-left: 0;
+    margin-top: 0;
+}
+
+div {
+    background-color: #E2E2ED;
+}
+
+div:not(#intro):hover {
+    background-color: rgb(0, 0, 255);
+}
+
+div img {
+
+    margin:auto; 
+    display:block;
+    width: 100%;
+}
+
+.topDim {
+    position: absolute;
+    opacity: 0;
+}
+
+.topDim:hover {
+    opacity: 1;
+}
+
+canvas {
+    image-rendering: optimizeSpeed;             
+    image-rendering: -moz-crisp-edges;          
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: -o-crisp-edges;            
+    image-rendering: crisp-edges;               
+    -ms-interpolation-mode: nearest-neighbor;   
+}
