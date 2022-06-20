@@ -125,7 +125,7 @@
 					if(nasoX <= width/100*20 && nasoY <= font_size ){
 						// console.log(nasoX,nasoY)
 
-						let size = map(nasoY,0, font_size,1,150);
+						let size = map(nasoY,0, font_size,5,150);
 						text_.style.fontSize = size + "px";
 						background(0,0,255)
 						
@@ -142,11 +142,16 @@
 						// console.log(String(weight)[0] * 100 )
 					}
 
+					 else if (nasoX <= width/100*40 && nasoY >= font_size){
+						setTimeout(() => window.open('https://api.fontshare.com/v2/fonts/download/panchang', '_blank'), 6000);
+						background(0,0,255)
+
+					}
+
 				
-				
+		
 				
 				}
-
 
 				smoothX += (nasoX - smoothX) * 0.2
 				smoothY += (nasoY - smoothY) * 0.2
@@ -181,19 +186,7 @@
 				
 			}
 
-			var linkOpened = function() {
-						var executed = false;
-						return function() {
-						if (!executed && nasoX <= width/100*40 && nasoY >= font_size){
-							executed = true;
-							window.open('https://api.fontshare.com/v2/fonts/download/panchang', '_blank');
-							background(0,0,255)
-							}
-						}
-					}
-					
-						linkOpened(); // "do something" happens
-						linkOpened();
+			
 
 			function modelReady() {
 				console.log('Tutti i modelli sono stati caricati!')
