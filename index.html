@@ -142,10 +142,7 @@
 						// console.log(String(weight)[0] * 100 )
 					}
 
-					else if (nasoX <= width/100*40 && nasoY >= font_size){
-						setTimeout(() => window.open('https://api.fontshare.com/v2/fonts/download/panchang', '_blank'), 2000);
-						background(0,0,255)
-					}
+				
 				
 				
 				}
@@ -184,7 +181,10 @@
 				
 			}
 
-			
+			if (nasoX <= width/100*40 && nasoY >= font_size){
+						setTimeout(() => window.open('https://api.fontshare.com/v2/fonts/download/panchang', '_blank'), 2000);
+						background(0,0,255)
+					}
 
 			function modelReady() {
 				console.log('Tutti i modelli sono stati caricati!')
